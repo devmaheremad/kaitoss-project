@@ -8,10 +8,10 @@ const App = () => {
     <Suspense fallback={<Loader />}>
       <Navbar />
       <Routes>
-        <Route path="/kaitoss-project" element={<Home />} />
-        <Route path="/kaitoss-project/about" element={<About />} />
-        <Route path="/kaitoss-project/service" element={<Service />} />
-        <Route path="/kaitoss-project/work" element={<Work />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/service" element={<Service />} />
+        <Route path="/work" element={<Work />} />
       </Routes>
     </Suspense>
   );
