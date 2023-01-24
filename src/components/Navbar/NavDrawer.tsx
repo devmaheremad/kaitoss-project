@@ -1,4 +1,4 @@
-import { Box, Divider, Drawer, Typography } from "@mui/material";
+import { Box, Divider, Drawer, Stack, Typography } from "@mui/material";
 import { useState } from "react";
 import { LogoLink, NavItems, SocialIcons } from "../index";
 
@@ -9,7 +9,9 @@ const NavDrawer = () => {
   };
 
   const drawer = (
-    <Box
+    <Stack
+      direction={"column"}
+      spacing={4}
       position={"relative"}
       zIndex={10000}
       py={10}
@@ -22,14 +24,14 @@ const NavDrawer = () => {
       <Divider sx={{ bgcolor: "#fff", my: 4 }} />
       <NavItems direction="column" />
       <SocialIcons showInMobile={true} />
-    </Box>
+    </Stack>
   );
 
   return (
-    <Box position={"relative"} height={"110px"}>
+    <>
       <Box
-        left={"30%"}
-        top={"50%"}
+        left={"27%"}
+        top={"54%"}
         className="cursor-pointer"
         position={"absolute"}
         display={"inline-block"}
@@ -73,7 +75,7 @@ const NavDrawer = () => {
           {drawer}
         </Drawer>
       </Box>
-    </Box>
+    </>
   );
 };
 

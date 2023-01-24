@@ -13,6 +13,7 @@ const Navbar = () => {
   return (
     <>
       <AppBar
+        position="fixed"
         component="nav"
         sx={{
           height: "110px",
@@ -21,7 +22,6 @@ const Navbar = () => {
           justifyContent: "center",
           alignItems: "center",
           borderBottom: "4px solid #6f0b35",
-          position: "absolute !important",
         }}
       >
         <Box maxWidth={"2000px"} width={"100%"}>
@@ -38,9 +38,9 @@ const Navbar = () => {
             <SearchForm />
             <SocialIcons showInMobile={false} />
           </Toolbar>
+          <NavDrawer />
         </Box>
       </AppBar>
-      <NavDrawer />
     </>
   );
 };
