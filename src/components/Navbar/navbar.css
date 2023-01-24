@@ -1,0 +1,27 @@
+.navLinks a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.2rem;
+}
+.navLinks a:hover {
+  color: #ffa930;
+}
+.navLinks a.active {
+  color: #ffa930;
+}
+#nav-search {
+  border: 1px solid #fff;
+  border-radius: 25px !important;
+  height: 28px;
+  color: #fff;
+  padding: 8px 15px;
+}
+#nav-search::placeholder {
+  color: #fff !important;
+  opacity: 1;
+}
+#nav-search ~ fieldset {
+  display: none;
+}
