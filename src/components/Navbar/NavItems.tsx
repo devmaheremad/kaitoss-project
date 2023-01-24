@@ -9,7 +9,7 @@ const NavItems = ({ direction }: NavItemsTypesProps) => {
       direction={direction === "row" ? "row" : "column"}
       spacing={5}
     >
-      <NavLink to="/">Home</NavLink>
+      <NavLink to="/kaitoss-project">Home</NavLink>
       <NavLink to="/about">About</NavLink>
       <NavLink to="/service">Service</NavLink>
       <NavLink to="/work">Work</NavLink>
