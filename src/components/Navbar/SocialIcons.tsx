@@ -7,7 +7,7 @@ const SocialIcons = ({ showInMobile }: SocialIconsTypesProps) => {
       direction={"row"}
       spacing={"10px"}
       display={
-        showInMobile ? { xs: "block", sm: "none" } : { xs: "none", sm: "block" }
+        showInMobile ? { xs: "block", md: "none" } : { xs: "none", md: "block" }
       }
     >
       <a href={"https://www.instagram.com/kaitossco_/"}>

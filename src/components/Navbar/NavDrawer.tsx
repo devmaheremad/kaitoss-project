@@ -34,11 +34,10 @@ const NavDrawer = () => {
         top={"54%"}
         className="cursor-pointer"
         position={"absolute"}
-        display={"inline-block"}
         zIndex={5000}
         aria-label="open drawer"
         onClick={handleDrawerToggle}
-        sx={{ display: { sm: "none" }, transform: "translateY(-50%)" }}
+        sx={{ display: { md: "none" }, transform: "translateY(-50%)" }}
       >
         <svg
           width={"35px"}
