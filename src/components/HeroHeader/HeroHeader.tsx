@@ -1,8 +1,12 @@
+import { Box } from "@mui/material";
+import { ContentSide, ImgSide } from "../index";
+
 const HeroHeader = () => {
   return (
-    <>
-      <div>HeroHeader</div>
-    </>
+    <Box minHeight={"100vh"} bgcolor={"#ffa930"}>
+      <ContentSide />
+      <ImgSide />
+    </Box>
   );
 };
 

@@ -13,6 +13,7 @@ const Navbar = () => {
   return (
     <>
       <AppBar
+        position={"absolute"}
         component="nav"
         sx={{
           height: "110px",
